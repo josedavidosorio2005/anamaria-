@@ -38,6 +38,8 @@ body.motion-off *,body.motion-off *::before,body.motion-off *::after{animation:n
 @media(max-width:550px){.wrap{padding-left:23px;padding-right:23px}.nav-cta{font-size:0;gap:0;padding:10px 13px;height:39px}.nav-cta::before{content:"Cotizar";font-size:11px}.brand-copy small{font-size:8px!important}.hero .interior{padding-top:143px;padding-bottom:66px}.hero h1{font-size:clamp(57px,12.4vw,74px)}.hero-description{font-size:14px;line-height:1.7;margin-top:26px}.hero-actions{gap:9px}.cta,.ghost-cta{padding:14px 15px;font-size:12px;gap:11px}.hero-foot{gap:17px;flex-wrap:wrap;margin-top:32px}.hero-art{width:min(360px,89vw);margin:35px auto 0}.center-brand{font-size:112px}.science-chip{border-radius:11px}.chip-1{left:-4%;top:15%;width:145px;padding:13px}.chip-1 strong{font-size:12px}.chip-1 .chip-label,.science-chip .chip-id{font-size:8px}.chip-2{right:-2%;bottom:6%;min-width:151px;padding:12px}.chip-2 strong{font-size:11px}.radial-copy{display:none}.hero-ticker{height:56px}.ticker-track span{font-size:9px}.editorial{padding:82px 0 70px}.editorial-heading{font-size:clamp(45px,10.4vw,64px);margin:30px 0}.editorial .intro-bottom p{font-size:14px}.editorial .intro-bottom .star{display:none}.services-top{display:block}.services-top h2{font-size:37px}.services-top p{margin:14px 0 0}.service-card.big,.service-card.violet,.service-card.lime,.service-card.cream,.service-card.ink{grid-column:span 12;min-height:295px}.service-card.big{min-height:350px}.service-card.violet{min-height:300px}.service-card.big h3{font-size:38px}.service-card.small h3{font-size:31px}.service-card{padding:26px}.service-card.big .card-art{right:-20%;width:260px;height:260px}.statement{padding:88px 0}.statement h2{font-size:clamp(50px,11vw,72px)}.statement-foot{margin-top:36px;align-items:center}.statement-foot p{font-size:14px}.statement .round-arr{width:51px;height:51px;font-size:25px}.about{padding:90px 0}.about-art{height:320px}.about-copy h2{font-size:47px}.about-copy p{font-size:14px}.about-points div{font-size:12px}.quote{padding:90px 0}.quote-head{margin-bottom:30px}.quote-head h2{font-size:58px}.quote-aside{padding:26px}.quote-aside h3{font-size:30px}.quote-aside p{font-size:12px}.quote-form{padding:28px 22px}.field-grid{grid-template-columns:1fr}.submit-row{flex-direction:column;align-items:stretch}.submit-row .legal{max-width:100%}.submit-btn{justify-content:space-between}.footer-main{padding-bottom:42px}.footer-bottom{align-items:start;flex-direction:column}.motion-control{bottom:10px;right:10px;padding:9px 11px}.hero .kicker{font-size:10px;letter-spacing:.13em}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 </style>
+<link rel="stylesheet" href="./solicitudes.css" />
+<script src="./solicitudes.js" defer></script>
 </head>
 <body>
 <div id="progress" aria-hidden="true"></div>
@@ -98,7 +100,36 @@ body.motion-off *,body.motion-off *::before,body.motion-off *::after{animation:n
 </section>
 <section class="statement"><div class="wrap"><span class="kicker reveal">NUESTRA IDEA CENTRAL</span><h2 class="reveal" data-delay="1">La calidad no es una meta estática. Es una <em>forma de avanzar.</em></h2><div class="statement-foot reveal" data-delay="2"><p>Transformemos desafíos técnicos en decisiones más claras, procesos más sólidos y oportunidades de crecimiento.</p><a href="#cotizar" class="round-arr" aria-label="Solicitar cotización">↗</a></div></div></section>
 <section class="about" id="sobre"><div class="wrap about-grid"><div class="about-art reveal" aria-label="Monograma conceptual de Ana María Gallego Betancur"><div class="badge">IDENTIDAD EN DESARROLLO</div><span class="ag">AG</span><span class="legend">ANA MARÍA GALLEGO BETANCUR / QUÍMICA FARMACÉUTICA</span></div><div class="about-copy"><span class="kicker reveal">LA PERSONA DETRÁS DEL CRITERIO</span><h2 class="reveal" data-delay="1">Ana María<br/><em>Gallego Betancur.</em></h2><p class="reveal" data-delay="2">Química farmacéutica. Este espacio presentará su trayectoria, áreas de especialidad, experiencia y enfoque profesional, una vez se validen los datos con ella.</p><div class="about-points reveal" data-delay="3"><div><span>01 / PERFIL</span>Trayectoria y especialidades</div><div><span>02 / ENFOQUE</span>Asesoría orientada a necesidades</div></div></div></div></section>
-<section class="quote" id="cotizar"><div class="wrap"><div class="quote-head reveal"><div><span class="kicker">EMPECEMOS UNA CONVERSACIÓN</span><h2>Hablemos de<br/><em>tu próximo paso.</em></h2></div><p>Cuéntanos lo que necesitas. El primer paso para una buena solución es una buena conversación.</p></div><div class="quote-board reveal" data-delay="1"><div class="quote-aside"><div class="quote-icon" aria-hidden="true">✳</div><div><span class="kicker" style="color:var(--lime)">COTIZACIÓN A MEDIDA</span><h3>Tu desafío merece atención personalizada.</h3><p>Selecciona el servicio, completa los datos y abre tu solicitud directamente en el WhatsApp de Ana María.</p></div><span class="fineprint">AG / CONSULTORÍA FARMACÉUTICA INDEPENDIENTE</span></div><form class="quote-form" id="quote-form"><p class="form-heading">01 / ¿QUÉ NECESITAS?</p><div class="choice-list" role="group" aria-label="Servicio de interés"><button type="button" class="choice active" aria-pressed="true" data-service="Auditorías internas">Auditorías internas</button><button type="button" class="choice" aria-pressed="false" data-service="Consultoría farmacéutica">Consultoría</button><button type="button" class="choice" aria-pressed="false" data-service="Gestión documental">Documentación</button><button type="button" class="choice" aria-pressed="false" data-service="Capacitaciones">Capacitaciones</button><button type="button" class="choice" aria-pressed="false" data-service="Mejora continua">Mejora continua</button></div><div class="field-grid"><div><label for="client-name">Nombre o empresa *</label><input id="client-name" name="name" required minlength="2" maxlength="120" autocomplete="organization" placeholder="¿Cómo te llamas?" /></div><div><label for="client-email">Correo electrónico *</label><input id="client-email" type="email" name="email" autocomplete="email" maxlength="254" required placeholder="correo@empresa.com" /></div><div><label for="client-city">Ciudad / ubicación</label><input id="client-city" name="city" maxlength="90" placeholder="Ciudad" /></div><div><label for="client-phone">WhatsApp de contacto</label><input id="client-phone" type="tel" name="phone" autocomplete="tel" maxlength="40" placeholder="+57 ..." /></div></div><label for="client-message" class="message-label">Cuéntanos sobre tu necesidad *</label><textarea id="client-message" name="message" required minlength="10" maxlength="1500" placeholder="¿Qué necesitas revisar, mejorar o implementar?"></textarea><div class="submit-row"><span class="legal">Al continuar se abrirá WhatsApp con tu solicitud preparada. Revisa el mensaje y pulsa «Enviar» en WhatsApp. Esta web no almacena los datos del formulario.</span><button type="submit" class="submit-btn">Continuar por WhatsApp <span>↗</span></button></div><div id="quote-result" aria-live="polite"></div></form></div><div class="demo-note"><b>Contacto por WhatsApp:</b> al completar el formulario se abre un mensaje con la información de tu solicitud para <b>+57 318 715 8731</b>. El envío solo se realiza cuando lo confirmas en WhatsApp. No compartas datos de pacientes ni información sensible por este canal.</div></div></section>
+<section class="quote" id="cotizar"><div class="wrap"><div class="quote-head reveal"><div><span class="kicker">EMPECEMOS UNA CONVERSACIÓN</span><h2>Hablemos de<br/><em>tu próximo paso.</em></h2></div><p>Cuéntanos lo que necesitas. El primer paso para una buena solución es una buena conversación.</p></div><div class="quote-board reveal" data-delay="1"><div class="quote-aside"><div class="quote-icon" aria-hidden="true">✳</div><div><span class="kicker" style="color:var(--lime)">COTIZACIÓN A MEDIDA</span><h3>Tu desafío merece atención personalizada.</h3><p>Selecciona el servicio, completa los datos y recibe una ficha visual lista para compartir por WhatsApp.</p></div><span class="fineprint">AG / CONSULTORÍA FARMACÉUTICA INDEPENDIENTE</span></div><form class="quote-form" id="quote-form"><p class="form-heading">01 / ¿QUÉ NECESITAS?</p><div class="choice-list" role="group" aria-label="Servicio de interés"><button type="button" class="choice active" aria-pressed="true" data-service="Auditorías internas">Auditorías internas</button><button type="button" class="choice" aria-pressed="false" data-service="Consultoría farmacéutica">Consultoría</button><button type="button" class="choice" aria-pressed="false" data-service="Gestión documental">Documentación</button><button type="button" class="choice" aria-pressed="false" data-service="Capacitaciones">Capacitaciones</button><button type="button" class="choice" aria-pressed="false" data-service="Mejora continua">Mejora continua</button></div><div class="field-grid"><div><label for="client-name">Nombre o empresa *</label><input id="client-name" name="name" required minlength="2" maxlength="120" autocomplete="organization" placeholder="¿Cómo te llamas?" /></div><div><label for="client-email">Correo electrónico *</label><input id="client-email" type="email" name="email" autocomplete="email" maxlength="254" required placeholder="correo@empresa.com" /></div><div><label for="client-city">Ciudad / ubicación</label><input id="client-city" name="city" maxlength="90" placeholder="Ciudad" /></div><div><label for="client-phone">WhatsApp de contacto</label><input id="client-phone" type="tel" name="phone" autocomplete="tel" maxlength="40" placeholder="+57 ..." /></div></div>
+<div class="field-grid request-form-options">
+  <div><label for="client-mode">Modalidad preferida</label><select id="client-mode" name="modalidad"><option value="Por definir">Por definir</option><option value="Virtual">Virtual</option><option value="Presencial">Presencial</option><option value="Híbrida">Híbrida</option></select></div>
+  <div><label for="client-when">¿Para cuándo la necesitas?</label><select id="client-when" name="plazo"><option value="Por definir">Por definir</option><option value="Lo antes posible">Lo antes posible</option><option value="En las próximas 2 semanas">En las próximas 2 semanas</option><option value="Dentro de un mes">Dentro de un mes</option><option value="Sin fecha definida">Sin fecha definida</option></select></div>
+</div>
+<label for="client-message" class="message-label">Cuéntanos sobre tu necesidad *</label><textarea id="client-message" name="message" required minlength="10" maxlength="1500" placeholder="¿Qué necesitas revisar, mejorar o implementar?"></textarea><label class="request-consent" for="client-consent"><input id="client-consent" name="consent" type="checkbox" required/><span>Autorizo que los datos de esta solicitud se incluyan en una ficha para compartirla con Ana María por WhatsApp. No incluyas datos de pacientes ni información sensible.</span></label>
+<div class="submit-row"><span class="legal">Tu ficha se preparará en este navegador. Podrás revisarla y decidir cómo compartirla; esta web no almacena los datos.</span><button type="submit" class="submit-btn">Generar mi ficha de solicitud <span>↗</span></button></div></form></div><section class="request-preview" id="request-preview" hidden aria-label="Vista previa de solicitud organizada">
+  <div class="request-preview-intro">
+    <div><span class="request-eyebrow">✓ SOLICITUD ORGANIZADA</span><h3>Tu ficha, lista para compartir.</h3></div>
+    <p>No tienes que redactar nada: los datos se clasificaron en una ficha profesional que puedes enviar como imagen desde tu dispositivo.</p>
+  </div>
+  <article class="request-card" id="request-card" aria-label="Ficha de solicitud de cotización">
+    <div class="request-card-head"><span class="request-card-mark">AG</span><div><small>ANA MARÍA GALLEGO BETANCUR · QUÍMICA FARMACÉUTICA</small><h4 id="pv-title">Solicitud de cotización</h4></div><span class="request-card-ref" id="pv-ref"></span></div>
+    <div class="request-card-service"><small>Servicio de interés</small><strong id="pv-service"></strong></div>
+    <dl class="request-card-fields">
+      <div><dt>Nombre o empresa</dt><dd id="pv-client"></dd></div><div><dt>Correo electrónico</dt><dd id="pv-email"></dd></div>
+      <div><dt>Teléfono</dt><dd id="pv-phone"></dd></div><div><dt>Ciudad</dt><dd id="pv-city"></dd></div>
+      <div><dt>Modalidad</dt><dd id="pv-mode"></dd></div><div><dt>Plazo requerido</dt><dd id="pv-when"></dd></div>
+    </dl>
+    <div class="request-card-details"><h5>Descripción de la necesidad</h5><p id="pv-details"></p></div>
+    <div class="request-card-foot"><strong>AG / SCIENCE IN MOTION</strong><span>Ficha preparada <span id="pv-date"></span></span></div>
+  </article>
+  <div class="request-actions">
+    <button type="button" id="share-card" disabled>↗ Compartir ficha como imagen</button>
+    <button type="button" id="download-card" disabled>↓ Descargar ficha</button>
+    <a id="chat-request" target="_blank" rel="noopener noreferrer" href="https://wa.me/573187158731">Abrir WhatsApp con resumen ↗</a>
+  </div>
+  <p id="request-status" role="status" aria-live="polite">Tu ficha aparecerá aquí cuando completes el formulario.</p>
+  <div class="demo-note"><b>Importante:</b> al compartir la imagen, tu celular permite elegir WhatsApp y el destinatario. En computador, si no admite compartir archivos, se descargará la ficha para adjuntarla manualmente. La web no envía mensajes automáticamente.</div>
+</section></div></section>
 </main>
 <footer><div class="wrap"><div class="footer-main"><div><h2>Hagamos que<br/><span>la calidad avance.</span></h2></div><div><p>Ana María Gallego Betancur<br/>Química farmacéutica · Consultoría y acompañamiento técnico.<br/><a href="https://wa.me/573187158731" target="_blank" rel="noopener noreferrer" aria-label="Escribir a Ana María por WhatsApp al +57 318 715 8731" style="color:var(--lime);display:inline-block;margin-top:12px">WhatsApp: +57 318 715 8731 ↗</a></p><a href="#inicio" class="rounded-tag">VOLVER AL INICIO ↑</a></div></div><div class="footer-bottom"><div><strong>AG / SCIENCE IN MOTION</strong> — CONCEPTO WEB</div><div>COTIZACIONES Y CONTACTO POR WHATSAPP</div></div></div></footer>
 <button id="motion-toggle" class="motion-control" type="button" aria-pressed="true" aria-label="Desactivar animaciones">✳ <span id="motion-label">Animación: ON</span></button>
@@ -127,44 +158,6 @@ function selectService(service){
 }
 choices.forEach(b=>b.addEventListener('click',()=>selectService(b.dataset.service)));
 document.querySelectorAll('[data-service-link]').forEach(a=>a.addEventListener('click',()=>selectService(a.dataset.serviceLink)));
-const form=document.getElementById('quote-form');
-form.addEventListener('submit',e=>{
-  e.preventDefault();
-  if(!form.reportValidity())return;
-  const get=id=>document.getElementById(id).value.trim();
-  const name=get('client-name');
-  const email=get('client-email');
-  const city=get('client-city');
-  const phone=get('client-phone');
-  const details=get('client-message');
-  const lines=[
-    '*Solicitud desde el portafolio de Ana María Gallego Betancur*',
-    '',
-    'Hola Ana María, quiero solicitar información o una cotización.',
-    '',
-    '*Servicio:* '+selected,
-    '*Nombre / empresa:* '+name,
-    '*Correo:* '+email,
-    ...(city?['*Ciudad / ubicación:* '+city]:[]),
-    ...(phone?['*WhatsApp de contacto:* '+phone]:[]),
-    '*Mi solicitud:* '+details,
-    '',
-    'Gracias.'
-  ];
-  const url='https://wa.me/573187158731?text='+encodeURIComponent(lines.join('\n'));
-  const box=document.getElementById('quote-result');
-  box.textContent='Tu solicitud está preparada.\nSe abrirá WhatsApp con Ana María. Revisa los datos y pulsa «Enviar» para confirmar el mensaje.\nSi no se abre automáticamente, utiliza este enlace:\n';
-  const link=document.createElement('a');
-  link.href=url;
-  link.target='_blank';
-  link.rel='noopener noreferrer';
-  link.className='whatsapp-link';
-  link.textContent='Abrir WhatsApp y enviar solicitud ↗';
-  box.appendChild(link);
-  box.classList.add('show');
-  // Se hace desde la interacción de envío para evitar bloqueos del navegador.
-  window.open(url,'_blank','noopener,noreferrer');
-});
 // Interactive card light follows cursor, without a heavy animation library.
 document.querySelectorAll('.service-card').forEach(c=>c.addEventListener('pointermove',e=>{let r=c.getBoundingClientRect();c.style.setProperty('--cx',((e.clientX-r.left)/r.width*100)+'%');c.style.setProperty('--cy',((e.clientY-r.top)/r.height*100)+'%')}));
 })();
