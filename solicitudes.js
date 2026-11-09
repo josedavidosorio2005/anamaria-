@@ -26,7 +26,9 @@ const els={
 const value=id=>(document.getElementById(id)?.value||'').trim();
 const clean=s=>String(s).replace(/\s+/g,' ').trim();
 function reference(){
-  const date=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Bogota',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()).replace(/-/g,'');
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Bogota',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const part=k=>parts.find(x=>x.type===k)?.value||'';
+  const date=part('year')+part('month')+part('day');
   const random=new Uint32Array(1);
   if(window.crypto&&window.crypto.getRandomValues)window.crypto.getRandomValues(random);
   else random[0]=Math.floor(Math.random()*1000000);
@@ -110,7 +112,7 @@ function drawImage(d){
   if(!ctx)throw new Error('Canvas no disponible');
   ctx.font='34px Arial, sans-serif';
   const detailLines=wrap(ctx,d.details,1020);
-  const H=Math.max(1420,1100+detailLines.length*48);
+  const H=Math.max(1480,1360+detailLines.length*48);
   canvas.height=H;
   const ink='#0a2929',mint='#d8fb78',paper='#f7f7f1',grey='#526b68',dark='#0b2023';
   function fillRect(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(x,y,w,h);}
