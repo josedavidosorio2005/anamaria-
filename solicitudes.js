@@ -203,9 +203,16 @@ els.share.addEventListener('click',()=>{
     }).catch(err=>{
       if(err.name!=='AbortError')els.status.textContent='No se pudo abrir el menú de compartir. Descarga la imagen y adjúntala en el chat con Ana María.';
     });
+  }else if(navigator.clipboard && navigator.clipboard.write && window.ClipboardItem){
+    navigator.clipboard.write([new ClipboardItem({'image/png':imageBlob})]).then(()=>{
+      els.status.textContent='Ficha copiada como imagen. Pulsa «Abrir WhatsApp con resumen», pega la imagen en el chat (Ctrl+V) y confirma el envío.';
+    }).catch(()=>{
+      download(imageBlob,filename());
+      els.status.textContent='Se descargó la imagen porque el navegador no permitió copiarla. Adjunta el archivo al chat con Ana María.';
+    });
   }else{
     download(imageBlob,filename());
-    els.status.textContent='Tu imagen fue descargada. Abre el chat con Ana María y adjunta la ficha. También puedes usar el botón de resumen por WhatsApp.';
+    els.status.textContent='La ficha se descargó. Abre el chat con Ana María y adjunta la imagen.';
   }
 });
 })();
