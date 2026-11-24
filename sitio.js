@@ -19,6 +19,10 @@
     trigger.focus();
   });
 
+  window.addEventListener('resize', () => {
+    if (menu.open && trigger.getClientRects().length === 0) menu.open = false;
+  });
+
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (motion.matches || !('IntersectionObserver' in window)) return;
 
